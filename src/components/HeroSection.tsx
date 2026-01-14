@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import heroBg from "@/assets/hero-bg.png";
 
 const trustBadges = [
   { icon: Shield, label: "NFRC Approved" },
@@ -53,7 +54,7 @@ export const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `linear-gradient(to right, hsl(var(--secondary) / 0.95) 0%, hsl(var(--secondary) / 0.85) 50%, hsl(var(--secondary) / 0.7) 100%), 
-            url('https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&w=2070&auto=format&fit=crop')`,
+            url(${heroBg})`,
         }}
       />
 
