@@ -1,29 +1,31 @@
+import { TopBar } from "@/components/TopBar";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
-import { UrgencySection } from "@/components/UrgencySection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { ProcessSection } from "@/components/ProcessSection";
+import { StatsSection } from "@/components/StatsSection";
 import { AboutSection } from "@/components/AboutSection";
+import { DifferentiatorsSection } from "@/components/DifferentiatorsSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
-import { ServiceAreaSection } from "@/components/ServiceAreaSection";
-import { LeadMagnetSection } from "@/components/LeadMagnetSection";
+import { GallerySection } from "@/components/GallerySection";
 import { BookingSection } from "@/components/BookingSection";
-import { FinalCTASection } from "@/components/FinalCTASection";
 import { Footer } from "@/components/Footer";
 import { MobileCTA } from "@/components/MobileCTA";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <TopBar />
       <Navbar />
       <HeroSection />
-      <UrgencySection />
       <ServicesSection />
+      <ProcessSection />
+      <StatsSection />
       <AboutSection />
+      <DifferentiatorsSection />
       <ReviewsSection />
-      <ServiceAreaSection />
-      <LeadMagnetSection />
+      <GallerySection />
       <BookingSection />
-      <FinalCTASection />
       <Footer />
       <MobileCTA />
     </div>
